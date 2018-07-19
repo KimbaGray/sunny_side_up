@@ -66,4 +66,5 @@ def home():
 #
 # #When you run this file with python this line executed and since app variable is Flask type (defined on line 5)
 # #when you say run Flask webserver is started. Debug=true is a pramater which allow flask to print messages/error on the command line (console)
-app.run(debug=True)
+if __name__ == "__main__":
+	app.run(debug=True)
