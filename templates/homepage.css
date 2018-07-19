@@ -1,0 +1,146 @@
+h1 {
+	color: black;
+	font-family: helvetica;
+  padding: 0px 20px 30px 20px;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: grid;
+  font-family: helvetica;
+  /* -webkit-text-size-adjust: 100%; */
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+* {
+  box-sizing: border-box;
+}
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #ffa500;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 26px;
+  fill: none;
+}
+.inp svg path {
+  stroke: #ffa500;
+  stroke-width: 2;
+}
+.inp svg path d {
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  height: 2px;
+  right: 0;
+  background: #ffa500;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: black;
+  transition: all 0.15s ease;
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #ffa500;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  color: #ffa500;
+  transform: translateY(-26px) scale(0.75);
+  transition-delay: 0.1s;
+}
+.inp input:focus + span + svg path {
+  stroke: #ffa500;
+  animation: elasticInput 0.4s ease forwards;
+}
+.inp input:focus + span + svg + .border {
+  background: #ffa500;
+}
+.dribbble {
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  transition: all 0.2s ease;
+}
+.dribbble span {
+  font-size: 28px;
+  color: #ffa500;
+}
+@-moz-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-webkit-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-o-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}

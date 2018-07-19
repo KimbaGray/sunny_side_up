@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "stylesheet" type = "text/css" href = "homepage.css">
+  <link href="dist/css/bootstrap.css" rel="stylesheet">
+	<title>sunny side up</title>
+</head>
+<body>
+    <div class"container">
+      <h1>sunny side up</h1>
+    </div>
+
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+  <label for="inp" class="inp">
+  <input type="text" id="inp" placeholder="&nbsp;">
+  <span class="label">enter your location</span>
+  <svg width="120px" height="26px" viewBox="0 0 120 26">
+    <path d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+  </svg>
+  <span class="border"></span>
+</label>
+
+<!-- dribbble -->
+<a class="dribbble" href="https://dribbble.com/shots/4827812-Elastic-Input-Field" target="_blank"><span class="fa fa-dribbble"></span></a>
+</body>
+</html>
