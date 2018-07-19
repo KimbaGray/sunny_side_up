@@ -1,6 +1,6 @@
 from flask import Flask , render_template,request
 from datetime import datetime
-from horoscopeapi import get_horoscope, zodiac_sign
+#from horoscopeapi import get_horoscope, zodiac_sign
 
 #This is create instance of Flask. app is variable
 app = Flask("MyApp")
@@ -9,7 +9,7 @@ app = Flask("MyApp")
 #Default route this method will be called when you hit http://127.0.0.0:5000/
 @app.route("/")
 def home():
-	return render_template ("homepage.html") # render_template method is a special function flask which redirect to the html file mentioned in the paramter
+	return render_template("homepage.html") # render_template method is a special function flask which redirect to the html file mentioned in the paramter
 
 #This method will be called when you hit http://127.0.0.0:5000/writeanythinghere
 #This is an example when you want to hit a URL with Paramaters. This is called GET request.
