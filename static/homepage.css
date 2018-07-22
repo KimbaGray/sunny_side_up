@@ -1,6 +1,6 @@
 body {
   display: grid;
-  font-family: futura;
+  font-family: helvetica;
   /* -webkit-text-size-adjust: 100%; */
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
