@@ -4,13 +4,16 @@ body {
   /* -webkit-text-size-adjust: 100%; */
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: #ffa500;
 }
 
 .header h1 {
 	color: black;
 	font-family: helvetica;
+	text-indent: 47px;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -96,6 +99,7 @@ body {
   font-size: 28px;
   color: #ffa500;
 }
+
 @-moz-keyframes elasticInput {
   50% {
     d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
