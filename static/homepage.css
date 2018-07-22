@@ -1,14 +1,14 @@
-.header h1 {
-	color: black;
-	font-family: helvetica;
-}
-
 body {
   display: grid;
   font-family: helvetica;
   /* -webkit-text-size-adjust: 100%; */
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+}
+
+.header h1 {
+	color: black;
+	font-family: helvetica;
 }
 
 * {
