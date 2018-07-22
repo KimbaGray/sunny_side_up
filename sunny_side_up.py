@@ -1,14 +1,12 @@
 from flask import Flask , render_template,request
 from datetime import datetime
 
-#This is create instance of Flask. app is variable
 app = Flask("MyApp")
 
 #Default route this method will be called when you hit http://127.0.0.0:5000/
 @app.route("/")
 def home():
 	return render_template("homepage.html") # render_template method is a special function flask which redirect to the html file mentioned in the paramter
-
 
 #Default route this method will be called when you hit http://127.0.0.0:5000/
 @app.route("/filterpage")
@@ -17,6 +15,10 @@ def filterpage():
 
 results = ["sketch", "Duck&Waffle","Gails"]
 # sketch = [postcode: 'W1s']
+
+if __name__ == "__main__":
+	app.run(debug=True)
+
 
 
 #This method will be called when you hit http://127.0.0.0:5000/writeanythinghere
@@ -74,5 +76,3 @@ results = ["sketch", "Duck&Waffle","Gails"]
 #
 # #When you run this file with python this line executed and since app variable is Flask type (defined on line 5)
 # #when you say run Flask webserver is started. Debug=true is a pramater which allow flask to print messages/error on the command line (console)
-if __name__ == "__main__":
-	app.run(debug=True)
