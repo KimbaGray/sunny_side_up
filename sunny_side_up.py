@@ -17,6 +17,7 @@ def filterpage():
 	return render_template ("ssp_filter_page.html", results = results)
 
 results = ["sketch", "Duck&Waffle","Gails"]
+imgs = ["sketch.jpg", "duck_waffle.jpg", "gails.png"]
 # sketch = [postcode: 'W1s']
 
 

@@ -2,11 +2,21 @@
 <html>
 <head>
   <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
+  <link rel = "stylesheet" type = "text/css" href = "../static/ssp_filter_page.css?version=21">
 	<title>sunny side up</title>
 </head>
 <body>
+  <h1>sunny side up</h1>
+  <label for="inp" class="inp">
+  <input type="text" id="inp" placeholder="&nbsp;">
+  <span class="label">enter your location</span>
+  <svg width="120px" height="26px" viewBox="0 0 120 26">
+    <path d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+  </svg>
+  <span class="border"></span>
+</label>
     <div class"container">
-      <h1>sunny side up</h1>
+
       {% for result in results %}
        <p>{{result}}</p>
       {% endfor %}
@@ -18,20 +28,40 @@
       <div class="bar3"></div>
     </div>
 
+<div class="filterbox">
+
+</div>
+<img src="../static/images/sketch.jpg"/>
+<img src="../static/images/duck_waffle.jpg"/>
+<img src="../static/images/gails.png"/>
+  <form>
+
+    <label>
+      <input type="checkbox" name="Instagramability"> instagramability
+    </label>
+
+    <label>
+      <input type="checkbox" name="Instagramability" > selfie lighting
+    </label>
+
+    <label>
+      <input type="checkbox" name="Instagramability"> organic produce
+    </label>
+
+    <label>
+      <input type="checkbox" name="Instagramability"> gender neutrual toilets
+    </label>
+
+  </form>
+</div>
+
 <script>
 function myFunction(x) {
     x.classList.toggle("change");
 }
 </script>
 
-  <label for="inp" class="inp">
-  <input type="text" id="inp" placeholder="&nbsp;">
-  <span class="label">enter your location</span>
-  <svg width="120px" height="26px" viewBox="0 0 120 26">
-    <path d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
-  </svg>
-  <span class="border"></span>
-</label>
+
 
 <!-- dribbble -->
 <a class="dribbble" href="https://dribbble.com/shots/4827812-Elastic-Input-Field" target="_blank"><span class="fa fa-dribbble"></span></a>
