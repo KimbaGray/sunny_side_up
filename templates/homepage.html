@@ -2,68 +2,42 @@
 <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
 <link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
 <html>
-
 <head>
   <title>sunny side up home</title>
 </head>
-
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <h1>sunny side up</h1><!-- navbar items, navbar burger... -->
-  </div>
-</nav>
-<p>
+  <section class="hero is-warning is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          sunny side up
+        </h1>
+        <h2 class="subtitle">
+          where do you like your eggs in the morning?
+        </h2>
+      </div>
+    </div>
+  </section>
+  &nbsp;
   <div id="postcode-form">
       <form method="post" action="/search_postcode">
         <div class="control">
           <div class="select">
-          <select>
-            <option>select postcode</option>
-            <option>nw</option>
-            <option>sw</option>
-            <option>e1</option>
-          </select>
+          <select name="location">
+            <option>I like mine...</option>
+            <option value="North" name="location">North</option>
+            <option value="South" name="location">South</option>
+            <option value="East" name="location">East</option>
+            <option value="West" name="location">West</option>
+            <option value="Central" name="location">Central</option>
+            </select>
+          </div>
         </div>
-      </div>
       <div class="control">
-  <input type="submit" class="button is-primary" name="submit">
-</div>
-      </form>
-    </div>
-  </p>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <nav role="navigation">
-  <div id="menuToggle">
-    <input type="checkbox" />
-
-    <span></span>
-    <span></span>
-    <span></span>
-
-    <ul id="menu">
-      <a href="#">
-        <li>our recommendations</li>
-      </a>
-      <a href="#">
-        <li>get in touch</li>
-      </a>
-    </ul>
+        <input type="submit" class="button is-warning" name="submit">
+      </div>
+    </form>
   </div>
-</nav> -->
-
-<!-- dribbble -->
-<!-- <a class="dribbble" href="https://dribbble.com/shots/4827812-Elastic-Input-Field" target="_blank"><span class="fa fa-dribbble"></span></a>
+<div>
 </body>
-</html> -->
+</html>
