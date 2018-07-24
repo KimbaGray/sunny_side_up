@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
+<link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
 <html>
-  <head>
-	   <title>sunny side up home</title>
-  </head>
+
+<head>
+  <title>sunny side up home</title>
+</head>
 
 <body>
-
-  <div class="header">
-    <h1>sunny side up</h1>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <h1>sunny side up</h1><!-- navbar items, navbar burger... -->
   </div>
+</nav>
+<p>
+  <div id="postcode-form">
+      <form method="post" action="/search_postcode">
+        <div class="control">
+          <div class="select">
+          <select>
+            <option>select postcode</option>
+            <option>nw</option>
+            <option>sw</option>
+            <option>e1</option>
+          </select>
+        </div>
+      </div>
+      <div class="control">
+  <input type="submit" class="button is-primary" name="submit">
+</div>
+      </form>
+    </div>
+  </p>
 
-<nav role="navigation">
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox" />
 
@@ -28,30 +61,9 @@
       </a>
     </ul>
   </div>
-</nav>
-
-    <!-- <div class="container" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div> -->
-
-<!-- <script>
-function myFunction(x) {
-    x.classList.toggle("change");
-}
-</script> -->
-
-<label for="inp" class="inp">
-  <input type="text" id="inp" placeholder="&nbsp;">
-  <span class="label">enter your location</span>
-  <svg width="120px" height="26px" viewBox="0 0 120 26">
-    <path d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
-  </svg>
-  <span class="border"></span>
-</label>
+</nav> -->
 
 <!-- dribbble -->
-<a class="dribbble" href="https://dribbble.com/shots/4827812-Elastic-Input-Field" target="_blank"><span class="fa fa-dribbble"></span></a>
+<!-- <a class="dribbble" href="https://dribbble.com/shots/4827812-Elastic-Input-Field" target="_blank"><span class="fa fa-dribbble"></span></a>
 </body>
-</html>
+</html> -->
