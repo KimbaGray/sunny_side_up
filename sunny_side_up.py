@@ -10,12 +10,7 @@ def home():
 @app.route("/search_area", methods=["POST"])
 def search_area():
 	location = request.form["location"]
-	if name=="North":
-		return render_template("north.html", location=location)
-
-# if ("location") == North:
-
-
+	return render_template("north.html", location=location)
 
 
 	# form_data = request.form
