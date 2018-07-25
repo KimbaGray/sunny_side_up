@@ -7,11 +7,21 @@ app = Flask("MyApp")
 def home():
 	return render_template("homepage.html")
 
-@app.route("/search_postcode", methods=["POST"])
-def read_label_data():
-	form_data = request.form
-	location = form_data.get("location")
-	return render_template("restaurant_page.html", location=location)
+@app.route("/search_area", methods=["POST"])
+def search_area():
+	location = request.form["location"]
+	if name=="North":
+		return render_template("north.html", location=location)
+
+# if ("location") == North:
+
+
+
+
+	# form_data = request.form
+	# location = form_data.get("location")
+	# return render_template("restaurant_page.html", location=location)
+	#
 
 
 if __name__ == "__main__":

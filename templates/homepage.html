@@ -2,42 +2,96 @@
 <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
 <link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
 <html>
-<head>
-  <title>sunny side up home</title>
-</head>
-<body>
-  <section class="hero is-warning is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          sunny side up
-        </h1>
-        <h2 class="subtitle">
-          where do you like your eggs in the morning?
-        </h2>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sunny Side Up</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Where do you like your eggs in the morning?
+      </h1>
     </div>
   </section>
-  &nbsp;
-  <div id="postcode-form">
-      <form method="post" action="/search_postcode">
-        <div class="control">
-          <div class="select">
-          <select name="location">
-            <option>I like mine...</option>
-            <option value="North" name="location">North</option>
-            <option value="South" name="location">South</option>
-            <option value="East" name="location">East</option>
-            <option value="West" name="location">West</option>
-            <option value="Central" name="location">Central</option>
-            </select>
+  <section class="section">
+    <div id="postcode-form">
+        <form method="post" action="/search_area">
+          <div class="control">
+            <div class="select">
+            <select name="location">
+              <option>I like mine...</option>
+              <option value="North" name="location">North</option>
+              <option value="South" name="location">South</option>
+              <option value="East" name="location">East</option>
+              <option value="West" name="location">West</option>
+              <option value="Central" name="location">Central</option>
+              </select>
+            </div>
           </div>
-        </div>
-      <div class="control">
-        <input type="submit" class="button is-warning" name="submit">
+    </section>
+<br>
+    <section class="section">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          How do you like your eggs in the morning?
+        </h2>
+        <p class="subtitle">
+          I like mine...
+        </p>
       </div>
-    </form>
+      <br>
+      <section class="section">
+            <div class="columns is-centered">
+            <div class="column is-narrow">
+            <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <label class="checkbox has-text-centered">
+              <input type="checkbox">
+              <br>Instagrammable
+            </label>
+          </td>
+          <td>
+            <label class="checkbox has-text-centered">
+              <input type="checkbox">
+              <br>With no plastic straws
+            </label>
+          </td>
+          <td>
+            <label class="checkbox has-text-centered">
+              <input type="checkbox">
+              <br>Ethically sourced
+            </label>
+          </td>
+          <td>
+            <label class="checkbox has-text-centered">
+              <input type="checkbox">
+              <br>With perfect selfie lighting
+            </label>
+          </td>
+          <td>
+            <label class="checkbox has-text-centered">
+              <input type="checkbox">
+              <br>Bottomless
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-<div>
+</div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="control">
+      <input type="submit" class="button is-warning" name="submit">
+    </div>
+  </div>
+</form>
+</section>
 </body>
 </html>
