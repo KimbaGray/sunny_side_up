@@ -19,5 +19,8 @@ def search_area():
 	elif location == "North":
 		return render_template("north.html", location=location)
 
+	else:
+		return render_template("otherareas.html", location=location)
+
 if __name__ == "__main__":
 	app.run(debug=True)
