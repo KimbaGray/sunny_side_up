@@ -18,7 +18,6 @@ def search_area():
 		return render_template("central.html", location=location)
 	elif location == "North":
 		return render_template("north.html", location=location)
-
 	else:
 		return render_template("otherareas.html", location=location)
 
