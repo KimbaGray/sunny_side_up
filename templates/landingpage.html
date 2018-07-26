@@ -1,97 +1,142 @@
 <!DOCTYPE html>
-<link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
-<link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
-<html>
   <head>
+    <link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
+    <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sunny Side Up</title>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
   </head>
-  <body>
-  <section class="section">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Where do you like your eggs in the morning?
-      </h1>
-    </div>
-  </section>
-  <section class="section">
-    <div id="search-form">
-        <form method="post" action="/search_area">
-          <div class="control">
-            <div class="select">
-            <select name="location">
-              <option>I like mine...</option>
-              <option value="North" name="location">North</option>
-              <option value="South" name="location">South</option>
-              <option value="East" name="location">East</option>
-              <option value="West" name="location">West</option>
-              <option value="Central" name="location">Central</option>
-              </select>
+    <body>
+      <section class="hero is-primary is-fullheight header-image">
+        <div class="hero-head">
+          <header class="navbar is-light">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <img src="
+                  https://thumbs.dreamstime.com/z/sunny-side-up-egg-illustration-fried-drawing-46025737.jpg" alt="Logo">
+                </a>
+                <span class="navbar-burger burger has-text-black" data-target="navbarMenuHeroC">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-dark">
+                    home
+                  </a>
+                  <a class="navbar-item">
+                    recipes
+                  </a>
+                  <a class="navbar-item">
+                    gallery
+                  </a>
+                </a>
+              </span>
             </div>
           </div>
-    </section>
-    <section class="section">
-      <div class="container has-text-centered">
-        <h1 class="title">
-          How do you like your eggs in the morning?
-        </h2>
-        <br>
-        <p class="subtitle">
-          I like mine...
-        </p>
-      </div>
-      <br>
-      <section class="section">
-            <div class="columns is-centered">
-            <div class="column is-narrow">
-            <table class="table">
-      <tbody>
-        <tr>
-          <td>
-            <label class="checkbox has-text-centered">
-              <input type="checkbox">
-              <br>Instagrammable
-            </label>
-          </td>
-          <td>
-            <label class="checkbox has-text-centered">
-              <input type="checkbox">
-              <br>With no plastic straws
-            </label>
-          </td>
-          <td>
-            <label class="checkbox has-text-centered">
-              <input type="checkbox">
-              <br>Ethically sourced
-            </label>
-          </td>
-          <td>
-            <label class="checkbox has-text-centered">
-              <input type="checkbox">
-              <br>With perfect selfie lighting
-            </label>
-          </td>
-          <td>
-            <label class="checkbox has-text-centered">
-              <input type="checkbox">
-              <br>Bottomless
-            </label>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-</section>
-<section class="section">
-  <div class="container">
-    <div class="control">
-      <input type="submit" class="button is-danger" name="submit">
+        </div>
+      </header>
     </div>
-  </div>
-</form>
-</section>
-</body>
-</html>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title has-text-black">
+          Where do you like your eggs in the morning?
+        </h1>
+        <section class="section">
+          <div id="search-form">
+              <form method="post" action="/search_area">
+                <div class="control">
+                  <div class="select has-text-black is-rounded">
+                  <select name="location">
+                    <option>I like mine...</option>
+                    <option value="North" name="location">North</option>
+                    <option value="South" name="location">South</option>
+                    <option value="East" name="location">East</option>
+                    <option value="West" name="location">West</option>
+                    <option value="Central" name="location">Central</option>
+                    </select>
+                  </div>
+                </div>
+          </section>
+          <section>
+            <section class="section">
+              <div class="container has-text-centered">
+                <h1 class="title has-text-black">
+                  How do you like your eggs in the morning?
+                </h2>
+                <br>
+                <p class ="has-text-weight-bold has-text-warning">
+                  I like mine...
+                </p>
+              </div>
+              <br>
+              <section class="section">
+                    <div class="columns is-centered">
+                    <div class="column is-narrow">
+                    <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="checkbox has-text-centered">
+                      <input type="checkbox">
+                      <br>Instagrammable
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox has-text-centered">
+                      <input type="checkbox">
+                      <br>With no plastic straws
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox has-text-centered">
+                      <input type="checkbox">
+                      <br>Ethically sourced
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox has-text-centered">
+                      <input type="checkbox">
+                      <br>With perfect selfie lighting
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox has-text-centered">
+                      <input type="checkbox">
+                      <br>Bottomless
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="control">
+              <input type="submit" class="button has-text-black is-inverted is-rounded" name="submit">
+            </div>
+          </div>
+        </form>
+        </section>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="has-text-black has-text-weight-bold"><a>Legal</a></li>
+            <li class="has-text-black has-text-weight-bold"><a>Contact Us</a></li>
+            <li class="has-text-black has-text-weight-bold"><a>Careers</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  </body>
+  </html>

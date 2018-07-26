@@ -1,73 +1,59 @@
 <!DOCTYPE html>
   <head>
-    <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
     <link rel = "stylesheet" type = "text/css" href = "../static/bulma-0.7.1/css/bulma.css">
+    <link rel = "stylesheet" type = "text/css" href = "../static/homepage.css">
     </head>
     <body>
-
       <section class="hero is-primary is-fullheight header-image">
-
-
-  <div class="hero-head">
-    <header class="navbar is-light">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="
-            https://thumbs.dreamstime.com/z/sunny-side-up-egg-illustration-fried-drawing-46025737.jpg" alt="Logo">
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-dark">
-              home
-            </a>
-            <a class="navbar-item">
-              recipes
-            </a>
-            <a class="navbar-item">
-              gallery
-            </a>
-
-              </a>
-            </span>
+        <div class="hero-head">
+          <header class="navbar is-light">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <img src="
+                  https://thumbs.dreamstime.com/z/sunny-side-up-egg-illustration-fried-drawing-46025737.jpg" alt="Logo">
+                </a>
+                <span class="navbar-burger burger has-text-black" data-target="navbarMenuHeroC">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-dark">
+                    home
+                  </a>
+                  <a class="navbar-item">
+                    recipes
+                  </a>
+                  <a class="navbar-item">
+                    gallery
+                  </a>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-  </div>
-
-
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-black">
-        Sunny Side Up
-      </h1>
-
-        <a class="button is-danger is-inverted is-rounded">start brunching!</a>
-
+      </header>
     </div>
-  </div>
-
-
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li class="is-dark"><a>Legal</a></li>
-          <li><a>Contact Us</a></li>
-          <li><a>Careers</a></li>
-
-        </ul>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title has-text-primary">Sunny Side Up</h1>
+        <a class="button has-text-black is-inverted is-rounded" href="{{url_for('eggs')}}">start brunching!</a>
       </div>
-    </nav>
-  </div>
-</section>
-
-    </body>
-    </html>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="has-text-black has-text-weight-bold"><a>Legal</a></li>
+            <li class="has-text-black has-text-weight-bold"><a>Contact Us</a></li>
+            <li class="has-text-black has-text-weight-bold"><a>Careers</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+</body>
+</html>

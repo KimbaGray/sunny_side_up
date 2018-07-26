@@ -5,12 +5,20 @@ app = Flask("MyApp")
 
 @app.route("/")
 def home():
+	return render_template("homepage.html")
+
+@app.route("/howdoyoulikeyoureggs")
+def eggs():
 	return render_template("landingpage.html")
 
 @app.route("/search_area", methods=["POST"])
 def search_area():
 	location = request.form["location"]
-	return render_template("north.html", location=location)
+	return render_template("imagegrid.html", location=location)
+
+	# if location == "North":
+
+	# elif
 
 	# form_data = request.form
 	# location = form_data.get("location")
